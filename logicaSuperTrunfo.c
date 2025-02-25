@@ -4,40 +4,47 @@
 // Tema 2 - Comparação das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
 // Siga os comentários para implementar cada parte do desafio.
-
-int main() {
-    // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
-
+int main (){
     
-    // Cadastro das Cartas:
-    // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
-    // utilizando a função scanf para capturar as entradas.
-    // utilize o código do primeiro desafio
+    float populacao, area, pib;
 
-    // Exemplo:
-    // printf("Digite o código da cidade: ");
-    // scanf("%s", codigo);
-    // 
-    // (Repita para cada propriedade)
+    float populacao2, area2, pib2;
 
-    // Comparação de Cartas:
-    // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
+    printf("A populacao da carta 1 e de : \n");
+    scanf("%i", &populacao);
 
-    // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
+    printf ("a area da carta 1 e: \n");
+    scanf("%i", &area);
 
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
+    printf("o pib da carta 1 e de: \n");
+    scanf("%i", &pib);
 
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
+    printf ("A população da carta 2 e de: \n");
+    scanf("%i", &populacao2);
+
+    printf ("A area da carta 2 e de : \n");
+    scanf("%i", &area2);
+
+    printf ("O pib da carta 2 e de: \n");
+    scanf("%i", &pib2);
+    
+    if (populacao < populacao2){
+        printf("A carta 1 perdeu para carta 2 em populacao. \n");
+    } else {
+        printf("A carta 1 ganhou da carta 2 em populacao. \n");
+    }; 
+
+    if (area < area2){
+        printf("a area da carta 1 perdeu em populacao para a carta 2. \n");
+    }else {
+        printf("A area da carta 1 e maior que a area da carta 2. \n");
+    }
+
+    if (pib < pib2){
+        printf("O pib da carta 1 e menor que o pib da carta 2. \n");
+    }else {
+        printf("O pib da carta 1 e maior que o pib da carta 2. \n");
+    }
 
     return 0;
 }
